@@ -1,0 +1,12 @@
+from notebook_es import Nota, Notebook
+n= Notebook()
+n.add_note('hello word')
+n.add_note('hello again')
+print(n.notebook[0].memo, n.notebook[1].memo)
+print(n.notebook[0].id)
+print(n.notebook[1].id)
+print(n.search('hello'))
+print(n.search('word'))
+n.update_memo(1, 'hi world')
+print(n.notebook[1].memo)
+print(n.notebook[0].memo)
